@@ -14,8 +14,8 @@
           <img src="img/index-logo.svg" width="200" height="100" alt="Логотип Техномарт">
         </a>
         <p>
-          <span>Поиск:</span>
           <!-- form search -->
+          <input type="search" placeholder="Поиск">
         </p>
         <a href="blank.html">Закладки: 0</a>
         <a href="blank.html">Корзина: 10</a>
@@ -72,6 +72,12 @@
         <h2>фильтр:</h2>
         <!-- form filter -->
         <div>
+          <h3>цена:</h3>
+          <p><!-- range slider --></p>
+          <p><span>0</span>-<span>30000</span></p>
+
+          <hr>
+
           <h3>производители:</h3>
           <input type="checkbox" name="option1" value="pv1" checked>BOSCH<br>
           <input type="checkbox" name="option2" value="pv2"        >ИНТЕРСКОЛ<br>
@@ -91,6 +97,20 @@
 
       <!-- product catalog -->
       <div>
+        <section>
+         <h3>сортировка:</h3>
+         <ul>
+           <li><button type="button">по цене</button></li>
+           <li><button type="button">по типу</button></li>
+           <li><button type="button">по функционалу</button></li>
+         </ul>
+         <p>
+           <!-- asc/desc sort -->
+           <button type="button"><img src="https://via.placeholder.com/20x20" width="20" height="20" alt="по возрастанию"></button>
+           <button type="button"><img src="https://via.placeholder.com/20x20" width="20" height="20" alt="по убыванию"></button>
+         </p>
+        </section>
+
         <ul>
 
           <!-- product 1 -->
@@ -218,7 +238,34 @@
           </li>
 
         </ul>
+
+        <!-- pagination -->
+        <ul>
+          <li>
+            <a title="текущая страница">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">следующая</a>
+          </li>
+        </ul>
       </div>
+
+      <section>
+        <h2>пара слов о перфораторах</h2>
+        <p>
+          Перфоратор - универсальный строительный инструмент.
+          Предназначен для свернления и дообления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве совмещены отбойный молоток и ударная дрель.
+        </p>
+      </section>
 
     </main>
 
