@@ -6,6 +6,7 @@
   <meta name="keywords" content="интернет-магазин, строительные-материалы, ремонт, инструменты">
   <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,31 +17,30 @@
     <a>
       <img src="img/logo.svg" width="108" height="18" alt="логотип техномарт">
     </a>
-    <div>
-      <!-- form search -->
-      <img src="img/icon_search.svg" width="17" height="17" alt="icon search">
-      <input type="search" placeholder="Поиск">
-    </div>
-    <a href="blank.html">
-      <img src="img/icon_bookmark.svg" width="15" height="15" alt="icon bookmark">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <img src="img/icon_search.svg" width="17" height="17" alt="">
+      <input type="search" placeholder="Поиск" aria-label="поиск">
+    </form>
+    <a href="blank.html" aria-label="закладки">
+      <img src="img/icon_bookmark.svg" width="15" height="15" alt="">
       <span>Закладки:</span><span>0</span>
     </a>
-    <a href="blank.html">
-      <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+    <a href="blank.html" aria-label="корзина">
+      <img src="img/icon_cart.svg" width="15" height="15" alt="">
       <span>Корзина:</span><span>0</span>
     </a>
-    <a href="blank.html">Оформить заказ</a>
+    <a href="blank.html" aria-label="оформить заказ">Оформить заказ</a>
   </section>
 
   <p>
-  интернет-магазин
-  строительных материалов
-  и инструментов для ремонта
+    интернет-магазин
+    строительных материалов
+    и инструментов для ремонта
   </p>
 
   <section>
     <div>
-      <img src="img/icon_phone.svg" width="17" height="17" alt="icon phone"/>
+      <img src="img/icon_phone.svg" width="17" height="17" alt=""/>
       <span>+7 (812) 555-05-55</span>
     </div>
     <address>
@@ -49,24 +49,25 @@
   </section>
 
   <section>
-    <a href="blank.html">
-      <img src="img/icon_login.svg" width="20" height="17" alt="icon login">
+    <a href="blank.html" aria-label="войти">
+      <img src="img/icon_login.svg" width="20" height="17" alt="">
       <span>Войти</span>
     </a>
-    <a href="blank.html">Регистрация</a>
+    <a href="blank.html" aria-label="регистрация">Регистрация</a>
   </section>
 
   <nav>
     <ul>
-      <li><a href="blank.html">Главная</a></li>
-      <li><a href="blank.html">Компания</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="blank.html">Новости</a></li>
-      <li><a href="blank.html">Спецпредложения</a></li>
-      <li><a href="blank.html">Доставка</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="blank.html" aria-label="главная страница">Главная</a></li>
+      <li><a href="blank.html" aria-label="компания">Компания</a></li>
+      <li><a href="catalog.html" aria-label="каталог">Каталог</a></li>
+      <li><a href="blank.html" aria-label="новости">Новости</a></li>
+      <li><a href="blank.html" aria-label="спецпредложения">Спецпредложения</a></li>
+      <li><a href="blank.html" aria-label="доставка">Доставка</a></li>
+      <li><a href="blank.html" aria-label="контакты">Контакты</a></li>
     </ul>
   </nav>
+
 </header>
 
 <main>
@@ -77,7 +78,7 @@
         <a href="blank.html">
           <span>Материалы</span>
           <span>на любой вкус</span>
-          <img src="img/icon_materials.svg" width="78" height="62" alt="icon materials">
+          <img src="img/icon_materials.svg" width="78" height="62" alt="">
         </a>
       </div>
     </li>
@@ -86,7 +87,7 @@
         <a href="blank.html">
           <span>Инструмент</span>
           <span>на все случаи</span>
-          <img src="img/icon_tools.svg" width="78" height="62" alt="icon tools">
+          <img src="img/icon_tools.svg" width="78" height="62" alt="">
         </a>
       </div>
     </li>
@@ -95,7 +96,7 @@
         <a href="blank.html">
           <span>Техника</span>
           <span>для стройки</span>
-          <img src="img/icon_tech.svg" width="78" height="62" alt="icon tech">
+          <img src="img/icon_tech.svg" width="78" height="62" alt="">
         </a>
       </div>
     </li>
@@ -104,7 +105,7 @@
         <a href="blank.html">
           <span>Скидки 50%</span>
           <span>на 350 товаров</span>
-          <img src="img/icon_discounts.svg" width="78" height="62" alt="icon discounts">
+          <img src="img/icon_discounts.svg" width="78" height="62" alt="">
         </a>
       </div>
     </li>
@@ -113,7 +114,7 @@
         <a href="blank.html">
           <span>Доставка</span>
           <span>бесплатно</span>
-          <img src="img/icon_delivery.svg" width="78" height="62" alt="icon delivery">
+          <img src="img/icon_delivery.svg" width="78" height="62" alt="">
         </a>
       </div>
     </li>
@@ -129,9 +130,12 @@
             <span>открыть каталог</span>
           </a>
         </div>
-        <!-- next/previous buttons -->
-        <a title="назад">&#10094;</a>
-        <a title="вперед">&#10095;</a>
+        <button type="button">
+          <img src="img/icon_button_left.svg" width="23" height="41" alt="кнопка влево">
+        </button>
+        <button type="button">
+          <img src="img/icon_button_left.svg" width="23" height="41" alt="кнопка вправо">
+        </button>
       </div>
     </li>
   </ul>
@@ -259,7 +263,7 @@
           поднимая его на ваш этаж!
         </p>
         <a>
-          <img src="img/delivery.png" width="460" height="260" alt="icon delivery">
+          <img src="img/delivery.png" width="460" height="260" alt="машинка символ доставки">
         </a>
       </section>
     </div>
@@ -292,7 +296,7 @@
     </p>
     <div>
       <!-- map -->
-      <img src="img/map.png" width="300" height="158" alt="карта: как проехать в магазин">
+      <img src="img/map.png" width="300" height="158" alt="карта показывающая как проехать в магазин">
     </div>
     <a href="blank">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
   </section>
@@ -307,21 +311,21 @@
       <img src="img/index-logo.svg" width="400" height="200" alt="Логотип Техномарт">
     </a>
     <ul>
-      <li><a href="blank.html">Компания</a></li>
-      <li><a href="blank.html">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="blank.html">Доставка</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="blank.html" aria-label="компания">Компания</a></li>
+      <li><a href="blank.html" aria-label="новости">Новости</a></li>
+      <li><a href="catalog.html" aria-label="каталог">Каталог</a></li>
+      <li><a href="blank.html" aria-label="доставка">Доставка</a></li>
+      <li><a href="blank.html" aria-label="контакты">Контакты</a></li>
     </ul>
     <p>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       +7 (812) 555-05-55
     </p>
     <ul>
-      <li><a href="blank.html">Материалы</a></li>
-      <li><a href="blank.html">Техника</a></li>
-      <li><a href="blank.html">Инструмент</a></li>
-      <li><a href="blank.html">Спецпредложения</a></li>
+      <li><a href="blank.html" aria-label="материалы">Материалы</a></li>
+      <li><a href="blank.html" aria-label="техника">Техника</a></li>
+      <li><a href="blank.html" aria-label="инструмент">Инструмент</a></li>
+      <li><a href="blank.html" aria-label="спецпредложения">Спецпредложения</a></li>
     </ul>
   </section>
 
@@ -332,18 +336,18 @@
     </p>
     <ul>
       <li>
-        <a href="#">
-          <img src="img/icon_vk.svg" width="25" height="15" alt="icon vk">
+        <a href="#" aria-label="vkontakte">
+          <img src="img/icon_vk.svg" width="25" height="15" alt="vkontakte">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon_fb.svg" width="25" height="15" alt="icon fb">
+        <a href="#" aria-label="facebook">
+          <img src="img/icon_fb.svg" width="25" height="15" alt="facebook">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon_insta.svg" width="25" height="15" alt="icon insta">
+        <a href="#" aria-label="instagram">
+          <img src="img/icon_insta.svg" width="25" height="15" alt="instagram">
         </a>
       </li>
     </ul>
@@ -358,6 +362,16 @@
   </section>
 
 </footer>
+
+
+<!-- popup map -->
+<div class="visually-hidden">
+  <!-- TODO map -->
+  <button type="button">
+    <img src="img/icon_close.svg" width="21" height="21" alt="">
+  </button>
+</div>
+
 
 </body>
 </html>

@@ -4,31 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт: каталог</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- header -->
 <header>
+
   <section>
     <p>ТЕХНОМАРТ</p>
-    <a href="index.html">
+    <a href="index.html" aria-label="о компании">
       <img src="img/logo.svg" width="108" height="18" alt="логотип техномарт">
     </a>
-    <div>
-      <!-- form search -->
-      <img src="img/icon_search.svg" width="17" height="17" alt="icon search">
-      <input type="search" placeholder="Поиск">
-    </div>
-    <a href="blank.html">
-      <img src="img/icon_bookmark.svg" width="15" height="15" alt="icon bookmark">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <img src="img/icon_search.svg" width="17" height="17" alt="">
+      <input type="search" placeholder="Поиск" aria-label="поиск">
+    </form>
+    <a href="blank.html" aria-label="закладки">
+      <img src="img/icon_bookmark.svg" width="15" height="15" alt="">
       <span>Закладки:</span><span>0</span>
     </a>
-    <a href="blank.html">
-      <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+    <a href="blank.html" aria-label="корзина">
+      <img src="img/icon_cart.svg" width="15" height="15" alt="">
       <span>Корзина:</span><span>10</span>
     </a>
-    <a href="blank.html">Оформить заказ</a>
+    <a href="blank.html" aria-label="оформить заказ">Оформить заказ</a>
   </section>
 
   <p>
@@ -39,7 +39,7 @@
 
   <section>
     <div>
-      <img src="img/icon_phone.svg" width="17" height="17" alt="icon phone"/>
+      <img src="img/icon_phone.svg" width="17" height="17" alt=""/>
       <span>+7 (812) 555-05-55</span>
     </div>
     <p>
@@ -49,42 +49,44 @@
 
   <section>
     <div>
-      <a href="blank.html">
-        <img src="img/icon_user.svg" width="20" height="18" alt="icon user"/>
+      <a href="blank.html" aria-label="личный кабинет">
+        <img src="img/icon_user.svg" width="20" height="18" alt=""/>
         <span>Равшан Джамшутович</span>
       </a>
-      <a href="blank.html">
-        <img src="img/icon_logout.svg" width="20" height="18" alt="icon logout"/>
+      <a href="blank.html" aria-label="выйти из аккаунта">
+        <img src="img/icon_logout.svg" width="20" height="18" alt=""/>
       </a>
     </div>
     <ul>
-      <li><a href="blank.html">Мои заказы</a></li>
-      <li><a href="blank.html">Личный кабинет</a></li>
+      <li><a href="blank.html" aria-label="мои заказы">Мои заказы</a></li>
+      <li><a href="blank.html" aria-label="личный кабинет">Личный кабинет</a></li>
     </ul>
   </section>
 
   <ul>
-    <li><a href="blank.html">Главная</a></li>
-    <li><a href="blank.html">Компания</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="blank.html">Новости</a></li>
-    <li><a href="blank.html">Спецпредложения</a></li>
-    <li><a href="blank.html">Доставка</a></li>
-    <li><a href="blank.html">Контакты</a></li>
+    <li><a href="blank.html" aria-label="главная страница">Главная</a></li>
+    <li><a href="blank.html" aria-label="компания">Компания</a></li>
+    <li><a href="catalog.html" aria-label="каталог">Каталог</a></li>
+    <li><a href="blank.html" aria-label="новости">Новости</a></li>
+    <li><a href="blank.html" aria-label="спецпредложения">Спецпредложения</a></li>
+    <li><a href="blank.html" aria-label="доставка">Доставка</a></li>
+    <li><a href="blank.html" aria-label="контакты">Контакты</a></li>
   </ul>
+
 </header>
 
-  <!-- main -->
+
 <main>
+
   <nav>
     <ul>
       <li>
-        <a href="index.html">
-          <img src="img/icon_home.svg" width="14" height="12" alt="icon home"/>
+        <a href="index.html" aria-label="домой">
+          <img src="img/icon_home.svg" width="14" height="12" alt=""/>
         </a>
       </li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="blank.html">Инструмент</a></li>
+      <li><a href="catalog.html" aria-label="каталог">Каталог</a></li>
+      <li><a href="blank.html" aria-label="инструмент">Инструмент</a></li>
       <li><span>Перфораторы</span></li>
     </ul>
   </nav>
@@ -93,31 +95,49 @@
 
   <section>
     <h2>фильтр:</h2>
-    <!-- form filter -->
-    <div>
-      <h3>цена:</h3>
-      <div><!-- range slider -->
-        <img src="img/icon_range_slider.svg" width="20" height="22" alt="icon range slider"/>
-      </div>
-      <p><span>0</span>-<span>30000</span></p>
-
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>цена:</legend>
+        <div><!-- range slider -->
+          <img src="img/icon_range_slider.svg" width="20" height="22" alt=""/>
+        </div>
+        <p><span>0</span>-<span>30000</span></p>
+      </fieldset>
       <hr>
-
-      <h3>производители:</h3>
-      <input type="checkbox" name="option1" value="pv1" checked>BOSCH<br>
-      <input type="checkbox" name="option2" value="pv2"        >ИНТЕРСКОЛ<br>
-      <input type="checkbox" name="option3" value="pv3" checked>MAKITA<br>
-      <input type="checkbox" name="option4" value="pv4"        >DEWALT<br>
-      <input type="checkbox" name="option4" value="pv5"        >HITACHI<br>
-
+      <fieldset>
+        <legend>производители:</legend>
+        <ul>
+          <li>
+            <label><input type="checkbox" name="manufacturer_name" value="BOSCH" checked>BOSCH</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="manufacturer_name" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="manufacturer_name" value="MAKITA" checked>MAKITA</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="manufacturer_name" value="DEWALT">DEWALT</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="manufacturer_name" value="HITACHI">HITACHI</label>
+          </li>
+        </ul>
+      </fieldset>
       <hr>
-
-      <h3>питание:</h3>
-      <input type="radio" name="r1" value="rv1" checked>АККУМУЛЯТОРНЫЕ<br>
-      <input type="radio" name="r2" value="rv2"        >СЕТЕВЫЕ<br>
-
-      <button type="button">Показать</button>
-    </div>
+      <fieldset>
+        <legend>питание:</legend>
+        <ul>
+          <li>
+            <label><input type="radio" name="power_source_type" value="battery" checked>аккумуляторные</label>
+          </li>
+          <li>
+            <label><input type="radio" name="power_source_type" value="network" checked>сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
   </section>
 
   <!-- product catalog -->
@@ -145,7 +165,7 @@
       <!-- product 1 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -162,7 +182,7 @@
       <!-- product 2 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -179,7 +199,7 @@
       <!-- product 3 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -196,7 +216,7 @@
       <!-- product 4 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -213,7 +233,7 @@
       <!-- product 5 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -230,7 +250,7 @@
       <!-- product 6 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -246,7 +266,7 @@
       <!-- product 7 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -263,7 +283,7 @@
       <!-- product 8 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -280,7 +300,7 @@
       <!-- product 9 -->
       <li>
         <button type="button">
-          <img src="img/icon_cart.svg" width="15" height="15" alt="icon cart">
+          <img src="img/icon_cart.svg" width="15" height="15" alt="">
           <span>Купить</span>
         </button>
         <button type="button">В закладки</button>
@@ -325,65 +345,82 @@
 
 </main>
 
-  <!-- footer -->
+
 <footer>
 
-  <div>
+  <section>
     <a>
       <img src="img/index-logo.svg" width="400" height="200" alt="Логотип Техномарт">
     </a>
     <ul>
-      <li><a href="blank.html">Компания</a></li>
-      <li><a href="blank.html">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="blank.html">Доставка</a></li>
-      <li><a href="blank.html">Контакты</a></li>
+      <li><a href="blank.html" aria-label="компания">Компания</a></li>
+      <li><a href="blank.html" aria-label="новости">Новости</a></li>
+      <li><a href="catalog.html" aria-label="каталог">Каталог</a></li>
+      <li><a href="blank.html" aria-label="доставка">Доставка</a></li>
+      <li><a href="blank.html" aria-label="контакты">Контакты</a></li>
     </ul>
     <p>
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       +7 (812) 555-05-55
     </p>
     <ul>
-      <li><a href="blank.html">Материалы</a></li>
-      <li><a href="blank.html">Техника</a></li>
-      <li><a href="blank.html">Инструмент</a></li>
-      <li><a href="blank.html">Спецпредложения</a></li>
+      <li><a href="blank.html" aria-label="материалы">Материалы</a></li>
+      <li><a href="blank.html" aria-label="техника">Техника</a></li>
+      <li><a href="blank.html" aria-label="инструмент">Инструмент</a></li>
+      <li><a href="blank.html" aria-label="спецпредложения">Спецпредложения</a></li>
     </ul>
-  </div>
+  </section>
 
-  <div>
+  <section>
     <p>
       &copy; 2010-2019 Компания "Техномарт"<br>
       Все права защищены
     </p>
     <ul>
       <li>
-        <a href="#">
-          <img src="img/icon_vk.svg" width="25" height="15" alt="icon vk">
+        <a href="#" aria-label="vkontakte">
+          <img src="img/icon_vk.svg" width="25" height="15" alt="vkontakte">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon_fb.svg" width="25" height="15" alt="icon fb">
+        <a href="#" aria-label="facebook">
+          <img src="img/icon_fb.svg" width="25" height="15" alt="facebook">
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon_insta.svg" width="25" height="15" alt="icon insta">
+        <a href="#" aria-label="instagram">
+          <img src="img/icon_insta.svg" width="25" height="15" alt="instagram">
         </a>
       </li>
     </ul>
     <p>
-      Обратная связь:<br>
+      Обратная связь:
       <a href="mailto:main@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
     <p>
-      Разработано -<br>
+      Разработано -
       <a href="htmlacademy.ru">htmlacademy.ru</a>
     </p>
-  </div>
+  </section>
 
 </footer>
+
+
+<!-- popup -->
+<div class="visually-hidden">
+  <p>
+    <img src="img/icon_mark.svg" width="66" height="66" alt="">
+    <span>товар добавлен в корзину!</span>
+  </p>
+  <p>
+    <a href="blank.html">oформить заказ</a>
+    <button type="button">продолжить покупки</button>
+  </p>
+  <button type="button">
+    <img src="img/icon_close.svg" width="21" height="21" alt="">
+  </button>
+</div>
+
 
 </body>
 </html>
