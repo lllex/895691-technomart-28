@@ -7,7 +7,6 @@
   --basic-white: #FFFFFF;
   --basic-black: #000000;
 
-  /* TODO color names */
   --basic-gray-dark: #293449;
   --basic-gray: #3D546F;
   --basic-gray-light: #C5C5C5;
@@ -40,6 +39,13 @@ body {
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
 }
 
 img {
@@ -166,6 +172,24 @@ footer .logo-box {
   color: var(--basic-gray-light-text);
 }
 
+/* header user info */
+
+.header_user_info li>a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-gray-light-text);
+
+  text-decoration: none;
+}
+
+.header_user_info li:nth-child(1) {
+  list-style: none;
+}
+
+/* header user menu */
+
+
 /* header user menu */
 
 .header_user_menu {
@@ -206,6 +230,7 @@ footer .logo-box {
 .header-nav ul {
   list-style: none;
 }
+
 
 .header-nav a {
   font-size: 18px;
@@ -348,6 +373,39 @@ footer ul {
 .social-links-item:focus,
 .social-links-item:active {
   background: var(--basic-red);
+}
+
+/* nav_path (breadcrumb) */
+
+.nav_path a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.nav_path a:hover,
+.nav_path a:focus {
+  text-decoration: underline;
+}
+
+.nav_path li {
+  list-style-image: url(../img/icon_list_style_right.svg);
+}
+
+.nav_path li:nth-child(1) {
+  list-style: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* catalog */
+
+.catalog_header {
+  text-align: left;
+
+  background-color: var(--basic-background);
+
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
 }
 
 /* ------------------------------------------------------------------------- */
