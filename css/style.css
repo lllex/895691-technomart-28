@@ -5,6 +5,7 @@
   --basic-background: #F1F5F7;
 
   --basic-white: #FFFFFF;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
 
   --basic-gray-dark: #293449;
@@ -46,7 +47,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
 
   background-color: var(--basic-white);
   background-position: top center;
@@ -126,10 +127,14 @@ footer .logo_box {
 /* search field */
 
 .search_field {
-  color: var(--basic-white);
-
   background-color: transparent;
   border: 0;
+}
+
+.search_field::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
 }
 
 .search_field:focus {
@@ -176,7 +181,7 @@ footer .logo_box {
   color: var(--basic-red);
 
   border-color: var(--basic-white);
-  border-size: 1px;
+  border-width: 1px;
   border-style: solid;
 }
 
@@ -250,11 +255,6 @@ footer .logo_box {
   text-align: center;
   text-decoration: none;
   color: var(--basic-white);
-
-  padding-top: 16px;
-  padding-bottom: 20px;
-  padding-left: 27px;
-  padding-right: 24px;
 }
 
 .header_nav a:hover,
@@ -286,8 +286,8 @@ ul.cards_grid {
   text-decoration: none;
 }
 
-p.cars_grid_item_mark {
-  font-family: Cuprum;
+p.cards_grid_item_mark {
+  font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -298,16 +298,14 @@ p.cars_grid_item_mark {
   background-color: var(--basic-red);
 }
 
-.cars_grid_item_text {
-  display: inline;
-}
-
 .cards_grid_item_title {
-  display: inline;
+  color: var(--basic-white);
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-align: left;
+
+  display: inline;
 }
 
 .cards_grid_item_desc {
@@ -317,7 +315,7 @@ p.cars_grid_item_mark {
   text-align: center;
   text-transform: uppercase;
 
-  background-color: lightgray;
+  background-color: var(--basic-white-opacity);
 }
 
 .cards_grid_item img {
@@ -615,7 +613,7 @@ footer ul {
 /* catalog */
 
 .catalog_content {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 18px;
@@ -645,7 +643,7 @@ footer ul {
 }
 
 .catalog_filter legend {
-  font-family: PT Sans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -744,7 +742,7 @@ ul.catalog_list {
 }
 
 .catalog_item_mark {
-  font-family: Cuprum;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -758,7 +756,7 @@ ul.catalog_list {
 }
 
 .catalog_active_item_buttons a {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
 
@@ -821,7 +819,7 @@ ul.catalog_list {
 }
 
 .catalog_item h3 {
-  font-family: PT Sans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -904,7 +902,7 @@ ul.catalog_list {
 }
 
 .catalog_prouct_info p {
-  font-family: PT Sans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
