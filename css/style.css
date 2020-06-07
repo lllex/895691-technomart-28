@@ -11,6 +11,7 @@
   --basic-gray-dark: #293449;
   --basic-gray: #3D546F;
   --basic-gray-light: #C5C5C5;
+  --basic-gray-light: rgba(197, 197, 197, 0.3);
   --basic-gray-light-text: #32425C;
   --basic-gray-light-button: #98A0AD;
   --basic-gray-light-line: #E5E5E5;
@@ -135,6 +136,7 @@ footer .logo_box {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+  opacity: 1;
 }
 
 .search_field:focus {
@@ -316,6 +318,11 @@ p.cards_grid_item_mark {
   text-transform: uppercase;
 
   background-color: var(--basic-white-opacity);
+}
+
+.cards_grid_item_desc:hover,
+.cards_grid_item_desc:focus {
+  background-color: var(--basic-gray-light-opacity);
 }
 
 .cards_grid_item img {
