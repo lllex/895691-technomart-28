@@ -24,6 +24,12 @@
   --basic-gold: #FFD180;
 
   --basic-brown-light: #F7F3EC;
+
+  --card-yellow-light: #FFBF47;
+  --card-blue: #3BBCE3;
+  --card-purple: #DC91D8;
+  --card-green: #8ED78F;
+  --card-yellow: #FFC047;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -47,7 +53,7 @@ body {
   background-repeat: no-repeat;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-size: 30px;
   line-height: 30px;
 
@@ -199,9 +205,6 @@ footer .logo_box {
 
 /* header user menu */
 
-
-/* header user menu */
-
 .header_user_menu {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -241,7 +244,6 @@ footer .logo_box {
   list-style: none;
 }
 
-
 .header_nav a {
   font-size: 18px;
   line-height: 24px;
@@ -263,6 +265,217 @@ footer .logo_box {
 
 .header_nav a:active {
   opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------- */
+/* main */
+
+/* cards grid */
+
+ul.cards_grid {
+  list-style: none;
+}
+
+.cards_grid_item {
+  width: 300px;
+  height: 123px;
+}
+
+.cards_grid_item a {
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+p.cars_grid_item_mark {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.cars_grid_item_text {
+  display: inline;
+}
+
+.cards_grid_item_title {
+  display: inline;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.cards_grid_item_desc {
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: lightgray;
+}
+
+.cards_grid_item img {
+  width: 44px;
+  height: 65px;
+}
+
+.card_bg_materials {
+  background-color: var(--card-yellow-light);
+}
+
+.card_bg_tools {
+  background-color: var(--card-blue);
+}
+
+.card_bg_tech {
+  background-color: var(--card-purple);
+}
+
+.card_bg_discounts {
+  background-color: var(--card-green);
+}
+
+.card_bg_delivery {
+  background-color: var(--card-yellow);
+}
+
+/* slideshow */
+
+.slideshow_current a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-red);
+
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 46px;
+  padding-right: 46px;
+
+  width: 192px;
+  height: 38px;
+}
+
+/* sections */
+
+.main_section_header {
+  background-color: var(--basic-brown-light);
+
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.main_section_header a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--basic-red);
+
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  width: 192px;
+  height: 38px;
+}
+
+/* manufacturers logo */
+
+.manufacturer_list {
+  list-style: none;
+}
+
+.manufacturer_item {
+  width: 220px;
+  height: 145px;
+
+  text-align: center;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--basic-gray-light-line);
+  border-radius: 2px;
+}
+
+.manufacturer_item:hover,
+.manufacturer_item:focus {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.manufacturer_item:active {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0.5;
+}
+
+.manufacturer_item img {
+  width: 125px;
+  height: 40px;
+}
+
+/* services */
+
+.services {
+  background-color: var(--basic-background);
+}
+
+.vertical_tabs_menu {
+  list-style: none;
+}
+
+.vertical_tabs_menu_item {
+  margin-bottom: 1px;
+}
+
+.vertical_tabs_menu_item a {
+  display: block;
+
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--basic-white);
+
+  background-color: var(--basic-gray-light-text);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+
+  width: 240px;
+  height: 61px;
+
+  padding-top: 13.5px;
+  padding-bottom: 17.5px;
+  padding-left: 22px;
+  padding-right: 139px;
+}
+
+.vertical_tabs_menu_item a:hover,
+.vertical_tabs_menu_item a:focus {
+  background: var(--basic-gray-dark);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.vertical_tabs_menu_item_active a {
+  color: var(--basic-gray-light-text);
+  background-color: var(--basic-white);
+  border: none;
+}
+
+.vertical_tabs_content h3 {
+  color: var(--basic-gray-light-text);
 }
 
 /* ------------------------------------------------------------------------- */
