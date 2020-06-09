@@ -371,6 +371,20 @@ p.cards_grid_item_mark {
   height: 38px;
 }
 
+.slideshow_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.slideshow_desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
 /* sections */
 
 .main_section_header {
